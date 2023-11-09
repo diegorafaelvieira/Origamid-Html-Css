@@ -1,0 +1,13 @@
+p {
+  font-size: 2rem;
+  font-family: Georgia, Times, serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.3; /*altura da linha*/
+  text-decoration: none;
+  text-transform: lowercase;
+  text-indent: 5rem; /*identação da 1ª linha*/
+  text-align: left;
+  text-shadow: 5px 5px 10px gray; /* eixo x/ eixo y/ blur = espalhar a sombra/ cor da sombra*/
+  letter-spacing: 0.05rem; /*espaçamento entre as letras*/
+}
