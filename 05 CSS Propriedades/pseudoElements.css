@@ -1,0 +1,38 @@
+h1::after { /*after = elemento depois do h1*/
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+li::before { /*before =  elemento antes do li*/
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#caf, #fff);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+
+p::first-line { /*Pega a 1ª linha do texto*/
+  font-weight: bold;
+}
+
+p::first-letter { /*Pega a 1ª letra*/
+  font-size: 2rem;
+  color: blue;
+}

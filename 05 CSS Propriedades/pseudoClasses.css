@@ -1,0 +1,65 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+}
+/*Pseudo Classes de Estado*/
+a:hover { /*Mouse por cima*/
+  background: #adf;
+  color: #147;
+}
+
+a:focus { /*Tab*/
+  background: #cfa;
+  color: #371;
+}
+
+a:active { /*Clica no botão*/
+  background: #ffa;
+  color: #761;
+}
+
+a:visited { /*Link que já foi visitado*/
+ background: #fda;
+  color: #731;
+}
+
+
+/*Pseudo Classes de Seletor*/
+.lista-1 li:first-child { /*Seleciona o Primeiro elemento*/
+  background: #caf;
+}
+
+.lista-1 li:last-child { /*Seleciona o Último elemento*/
+  background: #cfa;
+}
+
+.lista-1 li:nth-child(3) { /*Seleciona o 3 elemento*/
+  background: #cfa;
+}
+
+.lista-2 li:nth-child(even) { /*Seleciona os elementos Pares*/
+  background: #cfa;
+}
+
+.lista-2 li:nth-child(odd) { /*Seleciona os elementos Ímpares*/
+  background: #caf;
+}
+
+.lista-2 li:nth-child(3n) { /*Seleciona de 3 em 3 elementos*/
+  background: #adf;
+}
+
+
+/* Seleção de Negação */
+.lista-3 li:not(:first-child, :last-child, .terceiro) {
+  background: #caf;
+}
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
