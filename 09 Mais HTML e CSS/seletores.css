@@ -1,0 +1,40 @@
+[required] {
+  border: 2px solid tomato;
+}
+
+p [required] {
+  border: 2px solid blue;
+}
+
+[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+
+[href^="#"] { /* Todos com # */
+  background: tomato;
+}
+
+[href$=".com"] { /* Quando termina com o .com*/
+  background: forestgreen;
+}
+
+section > h2 { /* Seleciona h2 filho de section*/
+  color: tomato;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background:lightgreen;
+  padding: 10px;
+}
+
+p + p { /* Seleciona o p que vem depois de um p */
+  margin-top: 20px;
+}
+
+* { /* seleciona todos os elementos da tela */
+  border: 2px solid red;
+}
